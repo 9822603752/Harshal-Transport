@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+  }
+  
+  /* Header */
+  header.hero {
+    background: #b95334;
+    color: white;
+    padding: 40px 15px;
+    text-align: center;
+  }
+  
+  .btn {
+    background: white;
+    color: #007bff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 15px;
+  }
+  
+  section {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .services ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .services li {
+    background: #e9ecef;
+    margin: 10px 0;
+    padding: 10px;
+    border-left: 4px solid #007bff;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+  }
+  
+  form button {
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  footer {
+    background: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Logo Section */
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 15px;
+  }
+  
+  .logo {
+    width: 250px; /* smaller default for better responsiveness */
+    height: auto;
+  }
+  
+  .fastag-logo {
+    width: 100px;
+    height: auto;
+    position: absolute;
+    right: 10px; /* Add padding from edge */
+  }
+  
+  .services-24 {
+    color: #a3295a;
+    font-weight: bold;
+  }
+  
+  .contact {
+    margin-top: 10px;
+  }
+  
+  .title {
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  /* ✅ Responsive Design (Mobile First) */
+  @media (max-width: 768px) {
+    .logo {
+      width: 180px;
+    }
+  
+    .fastag-logo {
+      width: 80px;
+      right: 5px;
+    }
+  
+    header.hero {
+      padding: 30px 10px;
+    }
+  
+    .title {
+      font-size: 1.8rem;
+    }
+  
+    p, .contact {
+      font-size: 1rem;
+    }
+  
+    .btn {
+      font-size: 1rem;
+      padding: 8px 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logo-container {
+      flex-direction: column; /* Stack logos vertically */
+      position: static; /* Remove absolute positioning for better stacking */
+      gap: 10px;
+    }
+  
+    .fastag-logo {
+      position: static;
+      width: 80px;
+    }
+  
+    .logo {
+      width: 150px;
+    }
+  
+    header.hero {
+      padding: 20px 10px;
+    }
+  
+    .title {
+      font-size: 1.5rem;
+    }
+  
+    .btn {
+      padding: 8px 14px;
+      font-size: 0.9rem;
+    }
+  
+    section {
+      padding: 15px;
+    }
+  }
+  
